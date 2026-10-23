@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root { font-family: 'DM Sans', sans-serif; color: #302820; background: #f8f5ef; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #d9c19b; color: #302820; }
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+.page-shell { width: min(1200px, calc(100% - 48px)); margin-inline: auto; }
+.gold-line { background: linear-gradient(90deg, transparent, #b89b6b, transparent); height: 1px; }
+.product-image { transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+.product-card:hover .product-image { transform: scale(1.045); }
+.fade-up { animation: fadeUp .7s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 640px) { .page-shell { width: min(100% - 32px, 1200px); } }
